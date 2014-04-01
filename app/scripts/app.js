@@ -4,7 +4,9 @@ angular.module('meanstackApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap',
+  'ui.router'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
