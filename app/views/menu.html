@@ -1,0 +1,33 @@
+
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    <a ui-sref="main" class="navbar-brand"><i class="fa fa-th-large"></i> MEANStack.net</a> 
+  </div>
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- <li class="active"><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li> -->
+      <li ng-class="{ active: $state.includes('qna') }">
+				<a ui-sref="qna"><i class="fa fa-question-circle"></i> Questions</a>
+			</li>
+			<li ng-class="{ active: $state.includes('tech') }">
+				<a ui-sref="tech"><i class="fa fa-pencil-square-o"></i> Techs</a>
+			</li>
+			<li ng-class="{ active: $state.includes('member') }">
+				<a ui-sref="member"><i class="fa fa-smile-o"></i> Developers</a>
+			</li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+			<li>
+				<a ui-sref="login">Login</a>
+			</li>
+		</ul>
+  </div><!--/.nav-collapse -->
+</div>
