@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('meanstackApp')
-  .controller('LoginCtrl', function ($scope, $http) {
+  .controller('TechCtrl', function ($scope, $http) {
     
   });
